@@ -1,18 +1,13 @@
-lista_compras = ["manzanas", 5, "leche", 1, "tortillas",.5]
-print(lista_compras)
-
-lista_compras[1] = 6
+lista_compras = ["manzanas", "leche", "tortillas"]
 
 lista_compras.append("pan")
-lista_compras.append(1)
 
-print(lista_compras)
 lista_compras.insert(4,"peras")
-lista_compras.insert(5,5)
 
-print(lista_compras)
+for producto in lista_compras:
+    print("Vas a comprar",producto)
+    if producto == "leche":
+        print("vas a traer 2 litros de", producto)
 
-lista_compras.remove("manzanas")
-lista_compras.pop(0)
 
-print(lista_compras)
+# print(lista_compras)
