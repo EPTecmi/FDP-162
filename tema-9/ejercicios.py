@@ -14,19 +14,15 @@ lista_materias = ["mate","fisica","quimica","español","ingles"]
 lista_temperaturas = [20.4,35.9,40.7,23.5,-2.5]
 sum = 0
 canti = 0
-temp_max = -10000000
-temp_min = 10000000
+
 for temperatura in lista_temperaturas:
     sum += temperatura
     canti += 1
 
-    if temperatura < temp_min:
-        temp_min = temperatura
-    if temperatura > temp_max:
-        temp_max = temperatura
+    
 
 print("promedio temperaturas =", sum/canti)
-print("Temperatura maxima:", temp_max)
-print("Temperatura minima:", temp_min)
+print("Temperatura maxima:", max(lista_temperaturas))
+print("Temperatura minima:", min(lista_temperaturas))
 
 
