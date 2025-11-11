@@ -18,7 +18,7 @@ def registrar_contacto(lista):
     nombre = input("Nombre: ")
     if buscar_contacto(nombre,lista) != False:
         print("Contacto ya existe")
-        return
+        return lista
 
     telefono = input("Telefono: ")
     correo = input("Correo: ")
