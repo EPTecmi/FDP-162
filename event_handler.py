@@ -3,6 +3,7 @@ import subprocess
 from watchdog.events import FileSystemEventHandler
 
 script = "tema-16/class.py"
+script = "ventas/main.py"
 
 class MyEventHandler(FileSystemEventHandler):
     def on_modified(self, event):
